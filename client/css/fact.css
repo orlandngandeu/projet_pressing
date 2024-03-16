@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:#6a5ffe;
+}
+a:hover{
+    color:#ffffff;
+}
+
+.contenu
+{
+    width: 100%;
+    background: #FFF;
+    position: relative;
+    display: flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    flex-direction:row;
+}
+
+.barre
+{
+    background: #6a5ffe;
+    width: 30px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0; 
+    
+}
+
+.content
+{
+    width: 70%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.farre
+{
+    background: #6a5ffe;
+    width: 3px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:77%; 
+    
+}
+
+.content .heading
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.content .heading > h1
+{
+    text-transform: uppercase;
+    font-size:35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#6a5ffe;
+
+}
+
+.heading .leftdate p{
+    display:inline-block;
+    justify-content:right;
+    margin-right: 18px;
+    text-transform: uppercase;
+    font-size:18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#6a5ffe;
+
+}
+.heading .leftdate > div {
+    margin-right: 10px; 
+  }
+
+.heading .leftdate span{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size:18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    color:#000;
+
+}
+
+.content .title-heading
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    position: relative;
+}
+
+.infoheading > h1
+{
+    text-transform: uppercase;
+    font-size:20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#6a5ffe;
+
+}
+
+.infoheading > p
+{
+    text-transform: uppercase;
+    font-size:18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    margin-bottom:10px;
+    color:#000;
+}
+
+.clientinfo > h1
+{
+    text-transform: uppercase;
+    font-size:20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#6a5ffe;
+
+}
+
+.clientinfo > p,
+.clientinfo > span
+{
+    text-transform: uppercase;
+    font-size:18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    margin-bottom:10px;
+    color:#000;
+}
+
+.liste {
+    width: 100%;
+    margin: 10px auto;
+    border-collapse: collapse;
+  }
+
+  .liste .listone
+  {
+    background-color:#fff;
+  }
+
+  .liste .listwo
+  {
+    background-color:#edeeff;
+  }
+  
+  .liste th,
+  .liste td {
+    padding: 10px;
+    text-align: left;
+    border-style:none;
+  }
+  
+  .liste thead th {
+    background-color: #6a5ffe;
+    font-weight: bold;
+    font-size:20px;
+    color:#fff;
+    border-style:none;
+  }
+  
+  .liste tbody th {
+    font-weight: normal;
+  }
+  
+  .liste td span {
+    font-weight: normal;
+    margin-left:5px;
+  }
+
+  .liste .listfin
+  {
+    border-bottom:1px solid #edeeff;
+
+  }
+
+  .liste .listfin th
+  {
+    display:flex;
+    padding-top: 10px;
+    background-color: #ffffff;
+    font-size:18px;
+  }
+  .liste .listfin th span{
+    margin-left:8px;
+  }
+
+  .liste .netpayer td:nth-child(3)
+  {
+    font-weight: bold;
+    color:#000;
+    font-size:17px;
+  }
+
+  .liste .netpayer td:nth-child(4),
+  .liste .netpayer span
+  {
+    font-weight: bold;
+    color:#6a5ffe;
+    font-size:17px;
+  }
+
+  .content .avis
+  {
+    margin-top: 15px;
+    margin-bottom:5px;
+  }
+  .border
+  {
+    width:100%;
+    border:2px solid #6a5ffe;
+    margin: 30px auto;
+  }
+  .conclusion
+  {
+    text-align: center;
+    margin-bottom:50px;
+  }
+  .bouton
+  {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    margin:60px auto;
+  }
+
+  .bouton button
+  {
+    width:120%;
+    height:50px;
+    font-size:20px;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:5px auto;
+    border:2px solid #6a5ffe;
+    color:#6a5ffe;
+    background:#ffffff;
+    border-radius:6px;
+    
+  }
+  .bouton button:hover
+  {
+    background:#6a5ffe;
+    color:#ffffff;
+    cursor:pointer;
+    border: 1px solid #ffffff;
+    transition:0.1s ease-in;
+  }
+
+  .bouton button:active {
+    transform: scale(1.2);
+  }
+
+@media (max-width: 768px) {
+    .liste {
+      font-size: 12px;
+    }
+    a{
+        color:#fff;
+    }
+    .liste .listfin th
+    {
+      font-size:12px;
+    }    
+    .liste .netpayer td:nth-child(3)
+    {
+      font-size:12px;
+    }
+    .contenu
+    {
+      width: 100%;
+      background: #FFF;
+      position: relative;
+      display: flex;
+      justify-content:flex-start;
+      align-items:flex-start;
+    }
+
+    .barre
+    {
+        background: #6a5ffe;
+        width: 15px;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left:0; 
+        
+    }
+
+    .content
+    {
+        width: 100%;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .content .heading > h1
+    {
+        text-transform: uppercase;
+        font-size:30px;
+    }
+
+    .heading .leftdate p{
+        font-size:15px;
+    }
+
+    .heading .leftdate span{
+        font-size:15px;
+    }
+
+
+    .infoheading > h1
+    {
+        font-size:20px;
+    }
+
+    .infoheading > p
+    {
+        font-size:12px;
+    }
+
+    .clientinfo > h1
+    {
+        font-size:20px;
+    }
+
+    .clientinfo > p,
+    .clientinfo > span
+    {
+        font-size:12px;
+    }
+
+  .liste thead th {
+    font-size:15px;
+  }
+
+  .content .avis,
+  .conclusion
+  {
+    font-size:12px;
+  }
+
+  .farre
+  {
+    display: none;    
+  }
+
+  .bouton
+  {
+   position: fixed;
+   display: flex;
+   flex-direction:row;
+   gap:10px;
+   top:0;
+   left:0;
+   padding-left:20px;
+   margin:5px auto;
+  }
+
+  .bouton button
+  {
+    width:140px;
+    height:30px;
+    font-size:15px;
+    margin-top:1px;
+    margin-bottom:1px;
+    border:1px solid #6a5ffe;
+    color:#ffffff;
+    background:#1c1b1b;
+    border-radius:6px;
+    
+  }
+  .bouton button:hover
+  {
+    background:#6a5ffe;
+    color:#ffffff;
+    cursor:pointer;
+    border: 1px solid #ffffff;
+    transition:0.1s ease-in;
+  }
+
+  .bouton button:active {
+    transform: scale(1.2);
+  }
+}
+  

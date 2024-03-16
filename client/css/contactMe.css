@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+
+body
+{
+    font-family: 'Nunito', sans-serif;
+    margin: 15px 0px;
+    background: url(../images/togff.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.divider
+{
+    width: 100px;
+    height: 2px;
+    margin: 0 auto;
+    background: #04b152;
+}
+.heading h2
+{
+    text-transform: uppercase;
+    color: white;
+}
+.heading
+{
+    text-align:center;
+    padding-top: 10px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#contact-form
+{
+    font-size: 20px;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+    border-radius: 10px;
+}
+.blue
+{
+    color:#0067d6ec;
+}
+.form-control
+{
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Nunito','Times New Roman', serif;
+}
+
+textarea.form-control
+{
+    height: 70px;
+}
+
+.comments
+{
+    font-family: 'Nunito','Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #d82c2e;
+    height: 15px;
+    margin-top: 15px;
+}
+
+#contact-form input[type=submit]
+{
+    margin: 15px auto 0px;
+    display: block;
+}
+
+.button1
+{
+    border: 1px solid #ddd;
+    background: #0067d6ec;
+    color: #fff;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 7px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+  
+.button1:active {
+    transform: scale(1.2);
+}
+
+.button1:hover
+{
+    background: #333;
+    border-color: #0067d6ec;
+}
+.merci
+{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #04b152;
+}

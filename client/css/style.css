@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root {
+    --white: #fff;
+    --light: #fff;
+    --lights: #dfdfdf;
+    --fuscha: hsl(224, 100%, 58%);
+    --desaturate-fuscha: hsla(218, 79%, 50%, 0.15);
+    --desaturate-fuscha-2: hsla(218, 95%, 58%, 0.15);
+    --cyan: hsl(184, 46%, 57%);
+    --desaturate-cyan: hsla(184, 46%, 57%, 0.25);
+    --desaturate-cyan-2: hsla(184, 46%, 57%, 0.15);
+    --light-blue: #bbeef1;
+    --pinkless: #fff3e0;
+    --yellow: #f1b813;
+
+    --text-color-primary: #314657;
+    --text-color-secondary: #58626e;
+    --text-color-third: #9db3be;
+
+    --box-shadow-card: 8px 8px 32px var(--desaturate-fuscha);
+    --box-shadow-card-2: 8px 8px 32px var(--desaturate-cyan);
+    --box-sidebar: 2px 4px 16px var(--desaturate-cyan-2);
+
+    --padding-card: 28px;
+    --border-radius-rounded: 50%;
+    --border-radius-4: 4px;
+    --border-radius-8: 8px;
+    --border-radius-12: 12px;
+    --border-radius-card: var(--padding-card);
+}
+
+.dark-mode {
+    --white: #393e46;
+    --light: #222831;
+    --lights: #222831;
+    --desaturate-fuscha: hsla(218, 95%, 58%, 0.15);
+
+    --text-color-primary: #eee;
+    --text-color-secondary: #eee;
+
+    --box-shadow-card: 8px 8px 32px var(--desaturate-fuscha);
+    --box-shadow-card-2: 8px 8px 32px var(--desaturate-cyan);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+span,p
+{
+    color: var( --text-color-primary);
+}
+
+.conwrappw
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin-top: 15px;
+}
+
+
+.wrapper{
+    background:var(--white);
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.1), 0 32px 64px 
+    -48px rgba(0,0,0,0.5);
+}
+
+/* signup form cs code */
+.form
+{
+  padding: 25px 30px;
+}
+
+.form header{
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.form form{
+    margin: 20px 0;
+}
+
+.form form .error-txt{
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align:center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    display:none;
+}
+.form form .name-details{
+    display: flex; 
+}
+
+.form form .name-details .field:first-child{
+    margin-right: 10px; 
+}
+
+.form form .name-details .field:last-child{
+    margin-left: 10px; 
+}
+
+.form form .field{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .field label{
+    margin-bottom: 2px;
+}
+.form form .field input{
+    outline: none;
+}
+
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+}
+
+.form form .image input{
+    font-size: 17px;
+}
+
+.form form .button input{
+    margin-top:13px;
+    height: 45px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: var( --text-color-primary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .field i{
+    position:absolute;
+    right:15px;
+    color:var( --text-color-primary);
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.form form .field i.active::before{
+    color: #333;
+    content: "\f070";
+}
+
+.form form .button input:active {
+    transform: scale(1.2);
+}
+
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.form .link a{
+    color: #333;
+}
+.form .link a:hover{
+    text-decoration: underline;
+}
+
+/* Users Area CSS code */
+.users{
+    padding: 25px 30px;
+}
+
+.users header,
+.users-list a{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+.wrapper img{
+    object-fit: cover;
+    border-radius: 50%;
+}
+:is(.users, .users-list) .content{
+    display:flex;
+    align-items: center;
+}
+.users header .content img{
+    height: 50px;
+    width: 50px;
+}
+
+:is(.users, .users-list) .details{
+    color: #000;
+    margin-left: 15px;
+}
+:is(.users, .users-list) .details span{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.users header .logout{
+    color:var( --white);
+    font-size: 17px;
+    padding: 7px 15px;
+    background: var( --text-color-primary);
+    border-radius: 5px;
+}
+
+.users .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.users .search .text{
+    font-size:18px;
+}
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 50px);
+    border: 1px solid var(--lights);
+    padding: 0 13px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    outline:none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+.users .search input.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.users header .logout:active {
+    transform: scale(1.2);
+}
+
+.users .search button{
+    width: 47px;
+    height: 42px;
+    border: none;
+    outline: none;
+    color: var( --text-color-primary);
+    background: var(--light);
+    cursor: pointer;
+    font-size:17px;
+    border-radius: 0 5px 5px 0;
+    transition: all 0.2s ease;
+}
+
+
+.users .search button.active{
+    color:#fff;
+    background: #333;
+}
+.users .search button.active span {
+    color:#fff;
+    background: #333;
+}
+.users .search button.active i::before{
+    content: "\f00d";
+}
+
+.users-list{
+    max-height: 370px;
+    overflow-y: auto;
+}
+
+:is(.users-list, .chat-box)::-webkit-scrollbar{
+    width: 0px;
+}
+
+.users-list a{
+    margin-bottom: 15px;
+    page-break-after: 10px;
+    padding-right: 15px;
+    border-bottom-color: #f1f1f1;
+}
+
+.users-list a:last-child{
+    border: none;
+    margin-bottom: 0px;
+}
+.users-list a .content img{
+    height: 40px;
+    width:40px;
+}
+.users-list a .content p{
+    color:var(--text-color-secondary);
+}
+
+.users-list a .status-dot{
+    font-size: 12px;
+    color: #468669;
+}
+.users-list a .status-dot.offline span{
+    color:#ccc;
+}
+
+
+/* chat Area CSS code */
+
+.chat-area header{
+    display: flex;
+    align-items: center;
+    padding: 18px 30px;
+}
+.chat-area header .back-icon{
+    font-size: 20px;
+    color: var(--text-color-primary);
+}
+
+.chat-area header img{
+    height:45px;
+    width:45px;
+    margin:0 15px;
+}
+
+.chat-area header span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.chat-box{
+    height: 500px; 
+    overflow-y:auto;
+    background: #f7f7f7;
+    padding: 10px 30px 20px 30px;
+    box-shadow: inset 0 32px 32px rgb(0 0 0 / 5%),
+    inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box .chat{
+    margin: 15px 0;
+}
+.chat-box .chat p{
+    word-wrap:break-word;
+    padding: 8px 16px;
+    box-shadow: inset 0 0 32px rgb(0 0 0 / 8%),
+    inset 0 16px 16px -16px rgb(0 0 0 / 10%);
+}
+.chat-box .outgoing{
+    display: flex;
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+.outgoing .details p{
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: center;
+}
+.chat-box .incoming img{
+    height: 35px;
+    width: 35px;
+}
+.incoming .details{
+    margin-left:10px;
+    margin-right:auto;
+    max-width: calc(100% - 130px);
+}
+.incoming .details p{
+    background: #fff;
+    color:#333;
+    border-radius: 18px 18px 18px 0;
+    box-shadow: inset 0 0 32px #fff,
+    inset 0 16px 16px -16px #fff;
+}
+
+.chat-area .typing-area{
+    padding:18px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.typing-area input{
+    height: 45px;
+    width: calc(100% -58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding:0 13px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.typing-area button{
+    width: 55px;
+    border:none;
+    outline:none;
+    background:#333;
+    color: #fff;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+
+.typing-area button span{
+    color: #fff;
+}
